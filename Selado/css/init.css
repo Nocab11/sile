@@ -1,0 +1,476 @@
+@import url(reset.css);
+body {
+	font-size: 14px;
+	font-family: Open-sans, sans-serif;
+}
+.container {
+	width: 1020px;
+	margin: 0 auto;
+}
+header {
+	background: #4cb1ca;
+	padding: 15px 0;
+}
+.panel-top span {
+	color: #ccffff;
+}
+
+.panel-top .text-col {
+	color: #ffffff;
+	
+}
+.icon-arrow {
+	display: inline-block;
+	background: url(../images/arrow.png) no-repeat;
+	width: 9px;
+	height: 6px;
+	margin-right: 10px;
+}
+ul.main {
+	float: right;
+}
+ul.main li {
+	float: left;
+	margin-left: 30px;
+	position: relative;
+}
+ul.main li a {
+	text-decoration: none;
+	color:#ffffff;
+}
+ul.main li:after {
+	content: '';
+	display: block;
+	color:#fff;
+	border-right: 1px solid #fff;
+	width: 2px;
+	height: 18px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	margin-left: 15px;
+}
+ul.main li:last-child:after {
+	display: none;
+}
+
+.panel-bottom {
+	display: flex;
+	justify-content: flex-start; 
+	align-items: center;
+	padding: 35px 0;
+}
+.leo-shop {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-right: 30px;
+	color:#666;
+}
+.nav li{
+	float: left;
+	margin-left: 22px;
+}
+.nav li a {
+	font: bold 14px Open-sans, sans-serif;
+	text-transform: uppercase;
+	color: #666;
+	text-decoration: none;
+}
+.search {
+	margin-left: 100px;
+	width: 150px;
+}
+.icon1 {
+	background: url(../images/icon1.png) no-repeat;
+	width: 35px;
+	height: 35px;
+	margin-left: 29px;
+}
+.icon2 {
+	background: url(../images/icon2.png) no-repeat;
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+}
+.cart {
+	font: bold 14px Open-sans, sans-serif;
+	color: #666;
+	text-transform: uppercase;
+	margin-left: 24px;
+}
+.bg-glasses {
+	padding: 180px 0 190px;
+	background: url(../images/bg.png) no-repeat;
+	background-size: cover;
+}
+h1 {
+	background: #000;
+	opacity: 0.5;
+	color:#fff;
+	padding: 10px 15px;
+	margin: 5px 0 0 40px;
+	text-transform: uppercase;
+	display: table;
+	font-weight: bold;
+	font-size: 28px;
+}
+.text-glasses {
+	display: inline-block;
+}
+.product {
+	margin: 45px 0;
+	height: 1900px;
+}
+
+.content {
+	margin-right: 264px;
+	
+}
+.product-catalog {
+	width: 237px;
+	height: 320px;
+	box-shadow: 0 0 10px 1px rgba(221, 221, 221, 1);
+	text-align: center;
+	padding-top: 5px;
+	position: relative;
+	float: left;
+	
+	margin-right: 20px;
+	
+	margin-bottom: 20px;
+}
+.product-catalog:nth-child(3n) {
+	margin-right: 0;
+}
+.product-catalog:last-child {
+	margin-bottom: 50px;
+}
+.icon-new {
+	position: absolute;
+	right: -3px;
+	top: -4px;
+}
+.icon-sale {
+	position: absolute;
+	left: -3px;
+	top: -4px;
+}
+.basket {
+	background: url(../images/basket.png) no-repeat;
+	width: 64px;
+	height: 50px;
+	margin-left: 12px;
+}
+.desrc {
+	display: flex;
+	align-items: center;
+	text-align: start;
+	padding-top: 5px;
+	
+	font-size: 14px;
+	line-height: 20px;
+	
+}
+.text {
+	width: 217px;
+	text-align: center;
+	display: inline-block;
+}
+.cost {
+	font-size: 18px;
+	color: #7db122;
+}
+.cost-out {
+	margin-right: 5px;
+	text-decoration: line-through;
+}
+.baskets {
+	width: 75px;
+}
+
+.new_product, .staff_pick, .fetured_products {
+	margin-top: 20px;
+}
+.product h2 {
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.sidebar {
+	width: 234px;
+	float: right;
+}
+.featured-glass {
+	width: 234px;
+	height: 455px;	
+	text-align: center;
+	box-shadow: 0 0 10px 1px rgba(221, 221, 221, 1);
+	position: relative;
+}
+.line-top {
+	border-top: 4px solid #3399cc;
+}
+.featured-glass h2, .newsletters-signup h2 {
+	margin: 25px 0 35px;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #666;
+}
+.button {
+	position: absolute;
+	bottom: 50px;
+	left: 55px;
+	padding: 15px 25px;
+	color: #fff;
+	background: #3399cc;
+	border: none;
+}
+.featured-glass ul {
+	display: inline-block;
+	margin-top: 5px;
+
+}
+.space {
+	width: 10px;
+	height: 10px;
+	background: #7db122;
+	border-radius: 50%;
+	float: left;
+	margin-left: 7px;
+
+}
+.space:hover {
+	background: #3399cc;
+}
+.slaider {
+	margin-top: 15px;
+	box-shadow: 0 0 10px 1px rgba(221, 221, 221, 1);
+	height: 20px;
+}
+.newsletters-signup {
+	margin-top: 30px;
+	width: 234px;
+	height: 280px;	
+	text-align: center;
+	box-shadow: 0 0 10px 1px rgba(221, 221, 221, 1);
+}
+.newsletters-signup p {
+	margin: 20px 0 10px;
+	font-size: 16px;
+	color: #666;
+}
+.line-bottom {
+	width: 85px;
+	height: 1px;
+	background: #ccc;
+	margin: 0 auto;
+}
+.rectangle {
+	border: 1px solid #ccc;
+	height: 30px;
+	width: 185px;
+	margin: 14px auto 17px;
+}
+.button2 {
+	padding: 15px 25px;
+	color: #fff;
+	background: #7eb123;
+	border: none;
+	text-transform: uppercase;
+}
+section.call {
+	padding: 20px 0;
+	background: #4cb1ca;
+}
+section.call img {
+	border-radius: 50%;
+}
+section.call h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-left: 20px;
+	margin-right: 85px;
+	color: #fff;
+}
+.box-call {
+	display: flex;
+	align-items: center;
+}
+section.relations {
+	padding: 42px 0 54px;
+	background: #39a0b9;
+	color:#fff;
+}
+section.relations h4 {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+.colum_facebook {
+	height: 230px;
+	width: 230px;
+}
+.box {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.icon-like {
+	background: url(../images/icon-like.png) no-repeat;
+	width: 47px;
+	height: 23px;
+	margin: 5px 0 0;
+}
+.line_icon_top {
+	width: 232px;
+	height: 1px;
+	background: #ccc;
+	margin: 5px 0;
+}
+.line_icon_bottom {
+	width: 232px;
+	height: 1px;
+	margin: 125px 0;
+	display: block;
+}
+
+.colum_facebook li {
+	display: block;
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.icon-face {
+	background: url(../images/icon-face.png) no-repeat;
+}
+.icon-face2 {
+	background: url(../images/icon-face2.png) no-repeat;
+}
+.icon-face3 {
+	background: url(../images/icon-face3.png) no-repeat;
+}
+.icon-face4 {
+	background: url(../images/icon-face4.png) no-repeat;
+}
+.icon-face5 {
+	background: url(../images/icon-face5.png) no-repeat;
+}
+.icon-face6 {
+	background: url(../images/icon-face6.png) no-repeat;
+}
+.icon-face7 {
+	background: url(../images/icon-face7.png) no-repeat;
+}
+.icon-face8 {
+	background: url(../images/icon-face8.png) no-repeat;
+}
+.colum_facebook li:first-child {
+	margin-left: 0px;
+}
+.line_icon_bottom {
+	position: relative;
+}
+.line_icon_bottom:after  {
+	position: absolute;
+	width: 232px;
+	height: 1px;
+	background: #ccc;
+	margin: 5px 0;
+	display: block;
+	content: '';
+	top: -8px;
+}
+.colum_twitter {
+	width: 235px;
+}
+.colum_twitter_content {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+.colum_twitter_content p {
+	margin-left: 10px;
+	font-size: 13px;
+	line-height: 16px;
+	width: 200px;
+}
+.colum_information ul li {
+	margin-bottom: 13px;
+}
+.colum_contuct_uc p{
+	margin-bottom: 13px;
+	position: relative;
+}
+.colum_contuct_uc ul.social:after{
+	position: absolute;
+	width: 180px;
+	height: 1px;
+	background: #ccc;
+	margin: 5px 0;
+	display: block;
+	content: '';
+	top: -15px;
+}
+.colum_contuct_uc ul.social {
+	margin-top: 30px;
+	position: relative;
+}
+.colum_contuct_uc ul.social li{
+	display: block;
+	float: left;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+}
+.icon-google_plus {
+	background: url(../images/icon-google_plus.png) no-repeat;
+}
+.icon-linkedin {
+	background: url(../images/icon-linkedin.png) no-repeat;
+}
+.icon-youb {
+	background: url(../images/icon-youb.png) no-repeat;
+}
+.icon-facebook {
+	background: url(../images/icon-facebook.png) no-repeat;
+}
+.footer {
+	padding: 23px 0;
+	background: #0b4b5a;
+	color:#8adcf0;
+	background-repeat: repeat-x;
+}
+.copyright {
+	display: flex;
+	justify-content: space-between;
+}
+.copyright ul li{
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+.copyright ul li a {
+	text-decoration: none;
+	color:#8adcf0;
+}
+.copyright ul li a:hover {
+	color: #fff;
+	transition: .5s;
+}
+.copyright ul li:after {
+	content: '';
+	display: block;
+	color:#8adcf0;
+	border-right: 1px solid #fff;
+	width: 2px;
+	height: 14px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	margin-left: 10px;
+}
+.copyright ul li:last-child:after {
+	display: none;
+}
