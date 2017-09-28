@@ -7,6 +7,10 @@ body {
 	width: 1020px;
 	margin: 0 auto;
 }
+.wrapp {
+	width: 1160px;
+	margin: 0 auto;
+}
 header {
 	background: #4cb1ca;
 	padding: 15px 0;
@@ -103,6 +107,22 @@ ul.main li:last-child:after {
 	padding: 180px 0 190px;
 	background: url(../images/bg.png) no-repeat;
 	background-size: cover;
+	
+}
+.button-slaider {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.prev-button {
+	background: url(../images/prev-button.png) no-repeat;
+	width: 67px;
+	height: 67px;	
+}
+.new-button {	
+	background: url(../images/new-button.png) no-repeat;
+	width: 67px;
+	height: 67px;
 }
 h1 {
 	background: #000;
@@ -117,6 +137,7 @@ h1 {
 }
 .text-glasses {
 	display: inline-block;
+	margin-right: 620px;
 }
 .product {
 	margin: 45px 0;
