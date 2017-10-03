@@ -1,0 +1,28 @@
+{
+  "members":[
+    {
+      "id":1,
+      "fio":"Василий Галкин",
+      "email":"v.galkin@mail.ru",
+      "avatar":"../images/avatar_1.png"
+    },
+    {
+      "id":2,
+      "fio":"Денис Дорин",
+      "email":"d.dorin@mail.ru",
+      "avatar":"../images/avatar_2.png"
+    },
+    {
+      "id":3,
+      "fio":"Максим Иванов",
+      "email":"d.dorin@mail.ru",
+      "avatar":"../images/avatar_3.png"
+    },
+    {
+      "id":4,
+      "fio":"Анна Климова",
+      "email":"a.klimova@mail.ru",
+      "avatar":"../images/avatar_4.png"
+    }
+  ]
+}

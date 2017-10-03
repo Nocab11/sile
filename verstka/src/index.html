@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trello</title>
+
+    <!-- build:css -->
+      <link href="bower_modules/components-bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <link href="css/reset.css" rel="stylesheet">
+      <link href="css/stylename.css" rel="stylesheet">
+      <link href="css/iconmoon.css" rel="stylesheet">
+      <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+      
+    <!-- endbuild -->
+    <!-- build:js -->
+      <script src="app/require.config.js"></script>
+      <script data-main="app/startup" src="bower_modules/requirejs/require.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div id="page" data-bind="component: { name: route().page, params: route }"></div>
+    <div class="header">
+      <div class="header-center">
+        <h1 class="header-center__text">Dashboard</h1>
+      </div>
+    </div>
+    <div class="content">    
+        <div class="list-bg">
+          <p class="list-bg__list-title">Project Backlog</p>
+          <div class="card-bg">
+            <div class="clearfix card-bg__line">
+              <div class="card-bg__line-pink"></div>
+              <div class="card-bg__line-yellow"></div>
+            </div>
+            <a href="#callback" class="card-bg__link fancybox">Выполнить задание 1</a>
+            <img src="images/icon/thumbnail-01.png" alt="" class="card-bg__img">
+            <img src="images/icon/thumbnail-02.png" alt="" class="card-bg__img">
+          </div>
+          <div class="card-bg2">
+            <p class="card-bg2__text">Выполнить задание 2</p>
+          </div>
+          <div class="card-bg2">
+            <p class="card-bg2__text">Выполнить задание 3</p>
+          </div>
+          <p class="list-bg__add-a-card">Add a card...</p>
+        </div>
+        <div class="list-bg list-bg__medium">
+          <p class="list-bg__list-title">To Do</p>
+          <div class="card-bg2">
+            <p class="card-bg2__text">Выполнить задание 4</p>
+          </div>
+          <div class="card-bg2">
+            <p class="card-bg2__text">Выполнить задание 5</p>
+          </div>
+          <div class="card-bg2">
+            <p class="card-bg2__text">Выполнить задание 6</p>
+          </div>
+          <p class="list-bg__add-a-card">Add a card...</p>
+        </div>
+        <div class="list-bg list-bg__small">
+          <p class="list-bg__list-title">In Progress</p>
+          <p class="list-bg__add-a-card">Add a card...</p>
+        </div>
+        <div class="list-bg list-bg__small">
+          <p class="list-bg__list-title">In Review</p>
+          <p class="list-bg__add-a-card">Add a card...</p>
+        </div>
+        <div class="list-bg list-bg__small">
+          <p class="list-bg__list-title">Done</p>
+          <p class="list-bg__add-a-card">Add a card...</p>
+        </div>
+    </div>
+    
+    <div class="g-hidden">
+    <form id="callback" class="pop-form">
+    <div class="about">
+      <div class="form-icon">
+        <img src="images/icon/icon-card.png" alt="" class="form-icon_view">
+        <img src="images/icon/icon-comment.png" alt="" class="form-icon_view icon__img_indent">
+      </div>
+      <div class="content-form">
+        <p class="content-form__text-job">Выполнить задание 1</p>
+        <p class="content-form__text-desrc"><span class="text-total">in list</span> <span id="project">Project Backlog</span></p>
+        <div class="box">
+        <div class="members-labels">
+          <p class="members-labels_text-total">Members</p>
+          <img src="images/icon/thumbnail-01.png" alt="" class="members_img_indent">
+          <img src="images/icon/thumbnail-02.png" alt="" class="members_img_indent">
+          <img src="images/icon/icon-modal-add.png" alt="" class="members_img_indent">
+        </div>
+        <div class="members-labels members-labels_indent">
+          <p class="members-labels_text-total">Labels</p>
+          <div class="thumbnail_01 thum"></div>
+          <div class="thumbnail_02 thum""></div>
+          <img src="images/icon/icon-modal-add.png" alt="">
+        </div> 
+        </div>
+        <p class="text-total">Description <span class="edit">Edit</span></p>
+        <p class="content-form__add-comment">Add Comment</p>
+        <textarea class="text-area" name="name" placeholder="А где описание?" required></textarea>
+        <input type="submit" value="Send" class="btn" >
+      </div>
+      <div class="add">
+        <p class="add__text">Add</p>
+        <div class="block-modal">
+        <a href="#openModal1" class="block-modal__btn-members" >Members</a>
+        <i class="block-modal__members"></i>
+        <a href="#openModal2" class="block-modal__btn-labels" >Labels</a>
+        <i class="block-modal__labels"></i>
+        </div>
+      </div>
+    </div>
+      
+    <div id="openModal1" class="modalDialog-members">
+      <div class="mod-window-members">
+        <a href="#close" title="Закрыть" class="close">X</a>
+        <p class="text-modal">Members</p>
+        <input class="search" type="search" placeholder="Search members">
+        <i class="icon-search"></i>
+        <span class="board">Board members</span>
+        <div class="persons">
+          <div class="img-svetlana img-alex_item"></div>
+          <p class="persons__text">Светлана Сотникова</p>
+          <span class="persons__icon_fz icon-icon-members-check-grey"></span>
+        </div>
+        <div class="persons">
+          <div class="img-alex img-alex_item"></div>
+          <p class="persons__text">Александр Бальский</p>
+          <span class="persons__icon_fz icon-icon-members-check-grey"></span>
+        </div>
+        <div class="persons">
+          <div class="img-olga img-alex_item"></div>
+          <p class="persons__text">Ольга Муртазина</p>
+        </div>
+        <div class="persons">
+          <div class="img-maks img-alex_item"></div>
+          <p class="persons__text">Максим Самсонов</p>
+        </div>    
+      </div>
+    </div>
+    <div id="openModal2" class="modalDialog-labels">
+      <div class="mod-window-labels les">
+        <a href="#close" title="Закрыть" class="close">X</a>
+        <p class="text-modal">Labels</p>
+        <input class="search" type="search" placeholder="Search label">
+        <i class="icon-search"></i>
+        <div class="Bounding-Box">
+          <div class="labels-add labels-add_color_pink">
+            <p class="labels-add__desrc">Mobile</p>
+            <span class="labels-add__icon icon-icon-members-check-grey"></span>
+          </div>
+          <div class="icon-pencil"></div>
+        </div>
+        <div class="Bounding-Box">
+          <div class="labels-add labels-add_color_yellow">
+            <p class="labels-add__desrc">Web</p>
+            <span class="labels-add__icon icon-icon-members-check-grey"></span>
+          </div>
+          <div class="icon-pencil"></div>
+        </div>
+        <div class="Bounding-Box">
+          <div class="labels-add labels-add_color_red">
+            <p class="labels-add__desrc">Design</p>
+            <span class="labels-add__icon icon-icon-members-check-grey"></span>
+          </div>
+          <div class="icon-pencil"></div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+  <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+  <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="libs/countdown/jquery.plugin.js"></script>
+  <script src="libs/countdown/jquery.countdown.min.js"></script>
+  <script src="js/common.js"></script>
+  </body>
+</html>

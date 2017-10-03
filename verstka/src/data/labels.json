@@ -1,0 +1,19 @@
+{
+  "labels":[
+    {
+      "id":1,
+      "color":"#C377E0",
+      "title":"Mobile"
+    },
+    {
+      "id":2,
+      "color":"#F2D600",
+      "title":"Web"
+    },
+    {
+      "id":3,
+      "color":"#EB5A46",
+      "title":"Design"
+    }
+  ]
+}

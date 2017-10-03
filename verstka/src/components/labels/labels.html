@@ -1,0 +1,19 @@
+<!-- ko if:visible -->
+    <span>Labels</span>
+    <a href="javascript:;" data-bind="click:close"></a>
+      <input placeholder="Search labels"/>
+      <ul>
+        <!-- ko foreach: active_labels -->
+        <li>
+          <a href="javascript:;"></a>
+          <span data-bind="style:{'background-color':color}, text:title, click:$component.toggleLabel"></span>
+        </li>
+        <!-- /ko -->
+        <!-- ko foreach: inactive_labels -->
+        <li>
+          <a href="javascript:;"></a>
+          <span data-bind="style:{'background-color':color}, text:title, click:$component.toggleLabel"></span>
+        </li>
+        <!-- /ko -->
+      </ul>
+<!-- /ko --> 

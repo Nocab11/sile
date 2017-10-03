@@ -1,0 +1,32 @@
+<div data-bind="foreach:lists">
+    <textarea data-bind="text:title">Title</textarea>
+      
+        <div data-bind="sortable: { template: 'cardTemplate', data: cards, afterMove:$component.afterMoveCard }" style="min-height:10px;"></div>
+
+        <div data-bind="if:creatingCard">
+          <textarea data-bind="value:newCardName, event:{keypress: $parent.submitCard}"></textarea>
+              <button data-bind="click:$parent.createCard">Add</button>
+              <a href="javascript:;" data-bind="click:$parent.closeNewCard"></a>
+        </div>
+      <!-- ko ifnot:creatingCard -->
+      <a href="javascript:;" data-bind="click:$parent.newCard">Add a card...</a>
+      <!-- /ko -->
+</div>
+
+<!-- ko with:current_card -->
+<div data-bind="component:{name:'card', params:{card_opened:$component.card_opened, card:$data, list:$component.current_list}}"></div>
+<!-- /ko -->
+
+
+
+<script id="cardTemplate" type="text/html">
+  <div data-bind="click:$component.openCard">
+      <div data-bind="foreach:labels">
+        <div data-bind="style:{'background-color':color}"></div>
+      </div>
+      <span data-bind="text:name">Card title</span>
+      <div data-bind="foreach:members">
+          <img data-bind="attr:{'src':avatar}"/>
+      </div>
+    </div>
+</script>

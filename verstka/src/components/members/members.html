@@ -1,0 +1,30 @@
+
+
+    <span>Members</span>
+    <a href="javascript:;" data-bind="click:close"></a>
+
+
+      <input placeholder="Search members"/>
+
+        <h4>Board members</h4>
+        <ul>
+          <!-- ko foreach:active_members -->
+          <li data-bind="click:$component.toggleMember">
+            <span>
+              <img data-bind="attr:{src:avatar}"  />
+            </span>
+            <span data-bind="text:fio"></span>
+          </li>
+          <!-- /ko -->
+          <!-- ko foreach:inactive_members -->
+          <li data-bind="click:$component.toggleMember">
+            <span>
+              <img data-bind="attr:{src:avatar}" />
+            </span>
+            <span data-bind="text:fio"></span>
+          </li>
+          <!-- /ko -->
+        </ul>
+
+
+

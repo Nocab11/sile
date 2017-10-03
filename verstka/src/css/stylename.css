@@ -1,0 +1,5 @@
+   @font-face {
+    font-family: HelveticaNeue; /* Гарнитура шрифта */
+    src: url(../fonts/HelveticaNeue.eot); /* Для IE5-8 */
+    src: local(HelveticaNeue), url(../fonts/HelveticaNeue.ttf); /* Для остальных браузеров */
+   }

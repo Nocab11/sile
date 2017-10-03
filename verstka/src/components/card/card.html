@@ -1,0 +1,81 @@
+<!-- ko if:card_opened -->
+  <div data-bind="click:$component.close_modal"></div>
+      <a href="javascript:;" data-bind="click:$component.close_modal"></a>
+      <div class="header">
+          <textarea class="header__title" data-bind="text:card.name"></textarea>
+          <div>
+            in list
+            <a href="javascript:;" data-bind="text:list().title"></a>
+          </div>
+      </div>
+        <div class="card-detail">
+          <div>
+            <h3>Members</h3>
+            <!-- ko foreach:card.members -->
+              <div>
+                <img class="member" data-bind="attr:{'src':avatar}, click:$component.show_members_popup_1"/>
+              </div>
+            <!-- /ko -->
+            <div data-bind="click:show_members_popup_1">
+              <div class="icon-add"></div>
+            </div>
+            <!-- ko if:visible_members_popup_1 -->
+            <div data-bind="component:{name:'members', params:{visible:visible_members_popup_1, current_members:card.members}}"></div>
+            <!-- /ko -->
+          </div>
+            <h3 class="card-detail-item__title">Labels</h3>
+            <!-- ko foreach:card.labels -->
+              <div class="item-block align" data-bind="style:{'background':color}, click:$component.show_labels_popup_1"></div>
+            <!-- /ko -->
+            <div class="item-block align" data-bind="click:show_labels_popup_1">
+              <div class="icon-add"></div>
+            </div>
+            <!-- ko if:visible_labels_popup_1 -->
+            <div data-bind="component:{name:'labels', params:{visible:visible_labels_popup_1, current_labels:card.labels}}"></div>
+            <!-- /ko -->
+        </div>
+        <div>
+          <div>
+            <div>
+              Description
+              <a href="javascript:;" data-bind="click:editDescription">edit</a>
+            </div>
+          </div>
+       </div>
+       <div>
+         <div>
+            <!-- ko ifnot: description_edit -->
+             <div class="description" data-bind="text:card.description, click:editDescription"></div>
+            <!-- /ko -->
+            <!-- ko if: description_edit -->
+             <textarea data-bind="value:temp_description"></textarea>
+             <div>
+               <button data-bind="click:saveDescription">Save</button>
+               <a href="javascript:;" data-bind="click:closeDescritionEdit"></a>
+            </div>
+            <!-- /ko -->
+         </div>
+       </div>
+    <div>
+      <div>
+        <h3>Add</h3>
+        <div>
+          <!-- ko if:visible_members_popup_2 -->
+          <div data-bind="component:{name:'members', params:{visible:visible_members_popup_2, current_members:card.members}}"></div>
+          <!-- /ko -->
+          <a href="javascript:;" data-bind="click:show_members_popup_2">
+            <span class="icon-person"></span>
+            Members
+          </a>
+
+          <!-- ko if:visible_labels_popup_2 -->
+            <div data-bind="component:{name:'labels', params:{visible:visible_labels_popup_2, current_labels:card.labels}}"></div>
+            <!-- /ko -->
+          <a href="javascript:;" data-bind="click:show_labels_popup_2">
+            <span class="icon-label"></span>
+            Labels
+          </a>
+        </div>
+      </div>
+    </div>
+<!-- /ko -->

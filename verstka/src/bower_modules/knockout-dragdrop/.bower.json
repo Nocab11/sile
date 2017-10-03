@@ -1,0 +1,35 @@
+{
+  "name": "knockout-dragdrop",
+  "homepage": "https://github.com/One-com/knockout-dragdrop",
+  "authors": [
+    "Sune Simonsen"
+  ],
+  "description": "A drag and drop binding for Knockout.",
+  "main": "lib/knockout.dragdrop.js",
+  "keywords": [
+    "drag",
+    "drop",
+    "knockout"
+  ],
+  "license": "Standard 3-clause BSD",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "knockout": "3.2 || >=2.2 <=3.2"
+  },
+  "version": "2.5.1",
+  "_release": "2.5.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.5.1",
+    "commit": "c26ad898db992ce968dfd2b699eaf7229e29ce15"
+  },
+  "_source": "https://github.com/One-com/knockout-dragdrop.git",
+  "_target": "^2.5.1",
+  "_originalSource": "knockout-dragdrop",
+  "_direct": true
+}
